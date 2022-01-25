@@ -13,6 +13,8 @@ export default function Home({ properties }) {
               <p>{property.description}</p>
               <p>{property.pricePerNight}</p>
               <p>{property.propertyType}</p>
+              {console.log(property)}
+              <a href={`property/${property.slug.current}`}>See property here</a>
               <p>_____</p>
             </div>)}
         </div>
